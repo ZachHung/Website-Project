@@ -137,9 +137,11 @@ section .glide__nav {
   margin-top: 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
-
+section .glide__nav .title + .title {
+  margin-left: 5rem;
+}
 section .glide__nav .title {
   text-align: center;
   cursor: pointer;
@@ -310,6 +312,13 @@ section .glide__nav .glide__bullet--active::after {
     grid-template-columns: 1fr;
     row-gap: 2rem;
   }
+  section .glide__nav .title + .title {
+    margin-left: unset;
+  }
+  section .glide__nav {
+    justify-content: space-around;
+  }
+
   .spotlight__item {
     height: 100%;
   }
