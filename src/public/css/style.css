@@ -63,6 +63,7 @@ header {
 }
 
 .header-container {
+  position: relative;
   display: flex;
   color: #fff;
   justify-content: space-between;
@@ -100,7 +101,23 @@ header {
   width: 100%;
   left: 0;
 }
+.toggle-ham {
+  position: absolute;
+  top: 1.27rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
 
+.toggle__line {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
 .header__utility {
   display: flex;
   align-items: center;
@@ -593,3 +610,44 @@ header .account__options li:first-child h2 {
 }
 
 /*end account option */
+
+/* Responsive */
+@media only screen and (max-width: 739px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-ham {
+    display: flex;
+  }
+
+  .header__links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .header__links > a,
+  .header__utility .icon {
+    width: 100%;
+    padding: 1.25rem 0.5rem;
+  }
+  .header__utility {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .header__links > a::after {
+    bottom: -0.15rem;
+  }
+  .header__utility .icon {
+    font-size: 2.3rem;
+  }
+  .header__spacer {
+    display: none;
+  }
+  .header__links.active,
+  .header__utility.active {
+    display: flex;
+  }
+}

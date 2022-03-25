@@ -1,16 +1,17 @@
+const toggleBtn = document.getElementsByClassName("toggle-ham")[0];
+const headerLinks = document.getElementsByClassName("header__links")[0];
+const headerUltIcons = document.getElementsByClassName("header__utility")[0];
+
+toggleBtn.addEventListener("click", () => {
+  headerLinks.classList.toggle("active");
+  headerUltIcons.classList.toggle("active");
+});
+
 /*start prevent default event form*/
 const Forms = document.querySelectorAll(".account-modal-container form");
 const submitBtns = document.querySelectorAll(
   ".account-modal-container input[type ='submit'] "
 );
-
-/*
-submitBtns.forEach((item) => {
-	item.addEventListener("click", (e) => {
-		e.preventDefault();
-	});
-});
-*/
 
 Forms.forEach((item) => {
   item.addEventListener("submit", (e) => {
