@@ -61,6 +61,17 @@ header {
   aspect-ratio: 1000/50;
   background-image: url("/image/waveheader.svg");
 }
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 
 .header-container {
   position: relative;
@@ -101,23 +112,51 @@ header {
   width: 100%;
   left: 0;
 }
-.toggle-ham {
+.toggle-menu {
   position: absolute;
-  top: 1.27rem;
-  right: 1rem;
+  top: 0.2rem;
+  right: 0.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
+  padding: 0;
+}
+.toggle-menu .line {
+  fill: none;
+  stroke: white;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.toggle-menu .line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.toggle-menu .line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.toggle-menu .line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
 }
 
-.toggle__line {
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
-}
 .header__utility {
   display: flex;
   align-items: center;
@@ -179,39 +218,33 @@ footer {
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 2.5rem 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "logo copyright"
-    "social copyright";
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .footer__spacer {
   background-image: url("/image/wavefooter.svg");
 }
-.footer__logo {
+.contact__logo {
   justify-content: center;
   display: flex;
-  grid-area: logo;
 }
-.footer__social {
-  grid-area: social;
+.contact__social {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.footer__social a + a {
+.contact__social a + a {
   margin-left: 2rem;
 }
 
-.footer__social .icon {
+.contact__social .icon {
   font-size: 4rem;
   color: rgba(255, 255, 255, 0.8);
 }
 .footer__copyright {
   display: flex;
   flex-direction: column;
-  grid-area: copyright;
   font-size: 1.3rem;
   align-items: center;
   justify-content: center;
@@ -259,6 +292,7 @@ footer {
   border-bottom: 1px solid red !important;
 }
 .account-modal-container {
+  z-index: 15;
   font-size: 1.5rem;
 }
 .account-modal-container .error-message {
@@ -614,7 +648,7 @@ header .account__options li:first-child h2 {
 /* Responsive */
 @media only screen and (max-width: 739px) {
   header {
-    z-index: 1000;
+    z-index: 10;
     position: fixed;
   }
 
@@ -623,7 +657,7 @@ header .account__options li:first-child h2 {
     align-items: flex-start;
   }
 
-  .toggle-ham {
+  .toggle-menu {
     display: flex;
   }
 
@@ -631,16 +665,23 @@ header .account__options li:first-child h2 {
     display: none;
     flex-direction: column;
     width: 100%;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
   }
   .header__links > a,
   .header__utility .icon {
     width: 100%;
     padding: 1.25rem 0.5rem;
   }
+  .header__links > a:first-child {
+    padding-top: 2.5rem;
+  }
   .header__utility {
     display: none;
     flex-direction: column;
     align-items: flex-end;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
   }
   .header__links > a::after {
     bottom: -0.15rem;
@@ -648,11 +689,19 @@ header .account__options li:first-child h2 {
   .header__utility .icon {
     font-size: 2.3rem;
   }
-  .header__spacer {
+  .header__spacer,
+  .footer__spacer {
     display: none;
   }
   .header__links.active,
   .header__utility.active {
     display: flex;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+  .footer__copyright {
+    margin-top: 2rem;
   }
 }

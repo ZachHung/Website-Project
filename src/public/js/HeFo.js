@@ -1,4 +1,4 @@
-const toggleBtn = document.getElementsByClassName("toggle-ham")[0];
+const toggleBtn = document.getElementsByClassName("toggle-menu")[0];
 const headerLinks = document.getElementsByClassName("header__links")[0];
 const headerUltIcons = document.getElementsByClassName("header__utility")[0];
 
