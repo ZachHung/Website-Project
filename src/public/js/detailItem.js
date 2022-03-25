@@ -23,6 +23,14 @@ var swiper3 = new Swiper(".mySwiper3", {
     prevEl: ".same-swiper-icon-prev",
   },
 });
+var swiper3 = new Swiper(".mySwiper4", {
+  slidesPerView: 2,
+  spaceBetween: 0,
+  navigation: {
+    nextEl: ".same-swiper-icon-next",
+    prevEl: ".same-swiper-icon-prev",
+  },
+});
 swiper3.slideTo(1);
 // start solve user choose a color //
 const colorLsk = document.querySelectorAll(".color-detail-item");

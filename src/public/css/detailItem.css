@@ -214,7 +214,8 @@
   object-fit: fill;
 }
 .mySwiper2 .swiper-button-disabled,
-.mySwiper3 .swiper-button-disabled {
+.mySwiper3 .swiper-button-disabled,
+.mySwiper4 .swiper-button-disabled {
   opacity: 0.5;
   cursor: default !important;
   transform: scale(50%);
@@ -352,26 +353,32 @@
   max-width: 90%;
   text-align: justify;
 }
-.detailItem-sub .mySwiper3 {
+.detailItem-sub .mySwiper3,
+.detailItem-sub .mySwiper4 {
   height: 32rem;
 }
-.detailItem-sub .mySwiper3 .swiper-slide {
+.detailItem-sub .mySwiper3 .swiper-slide,
+.detailItem-sub .mySwiper4 .swiper-slide {
   padding: 1rem 0.5rem;
   display: block;
 }
 
-.detailItem-sub .mySwiper3 .slide-item-info {
+.detailItem-sub .mySwiper3 .slide-item-info,
+.detailItem-sub .mySwiper4 .slide-item-info {
   padding-left: 1rem;
   margin-top: 3.5rem;
 }
-.detailItem-sub .mySwiper3 .slide-item-info p {
+.detailItem-sub .mySwiper3 .slide-item-info p,
+.detailItem-sub .mySwiper4 .slide-item-info p {
   margin-top: 2rem;
   font-size: 1.4rem;
 }
-.detailItem-sub .swiper3-item-newPrice {
+.detailItem-sub .swiper3-item-newPrice,
+.detailItem-sub .swiper4-item-newPrice {
   color: red;
 }
-.detailItem-sub .swiper3-item-oldPrice {
+.detailItem-sub .swiper3-item-oldPrice,
+.detailItem-sub .swiper4-item-oldPrice {
   margin-left: 1rem;
   text-decoration: line-through;
 }
@@ -563,7 +570,9 @@
 .detailItem-about .modal-main-item {
   margin-top: 1rem;
 }
-
+.mySwiper4 {
+  display: none;
+}
 @keyframes nextIcon {
   from {
     transform: translateX(10px);
@@ -597,5 +606,50 @@
   }
   to {
     transform: scale(100%);
+  }
+}
+@media only screen and (max-width: 739px) {
+  .path {
+    padding: 20px;
+  }
+  .item-name {
+    padding: 20px;
+  }
+  .detailIitem-main {
+    display: block;
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+  }
+  .detailItem-img {
+    width: 100%;
+    max-width: 100%;
+    position: static;
+    margin-top: 20px;
+  }
+  .detailItem-container .mySwiper .swiper-slide {
+    width: 60%;
+  }
+  .detailItem-container .swiper-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .detailItem-option {
+    width: 100%;
+    max-width: 100%;
+    position: static;
+  }
+  .detailItem-about {
+    width: 90%;
+    max-width: 100%;
+    margin-top: 50px;
+    margin: 50px auto 0 auto;
+  }
+  .detailItem-sub {
+    max-width: 100%;
+    margin: 0;
+  }
+  .mySwiper3 {
+    display: none;
   }
 }

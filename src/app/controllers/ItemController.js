@@ -22,10 +22,7 @@ class ItemController {
         options
           .find({ detail: capacity, slug: type })
           .then((options) => {
-            let path = [
-              { name: "Điện Thoại", href: "/phone" },
-              { name: data[0].name, href: "" },
-            ];
+            let path = [{ name: "Điện Thoại", href: "/phone" }];
             let mainItem = options.filter((option) => {
               return (option.detail = capacity);
             });
@@ -83,10 +80,7 @@ class ItemController {
         options
           .find({ detail: capacity, slug: type })
           .then((options) => {
-            let path = [
-              { name: "Laptop", href: "/laptop" },
-              { name: data[0].name, href: "" },
-            ];
+            let path = [{ name: "Laptop", href: "/laptop" }];
             let mainItem = options.filter((option) => {
               return (option.detail = capacity);
             });
@@ -144,10 +138,7 @@ class ItemController {
         options
           .find({ detail: capacity, slug: type })
           .then((options) => {
-            let path = [
-              { name: "Tablet", href: "/tablet" },
-              { name: data[0].name, href: "" },
-            ];
+            let path = [{ name: "Tablet", href: "/tablet" }];
             let mainItem = options.filter((option) => {
               return (option.detail = capacity);
             });
@@ -205,10 +196,7 @@ class ItemController {
         options
           .find({ detail: capacity, slug: type })
           .then((options) => {
-            let path = [
-              { name: "Phụ Kiện", href: "/accessory" },
-              { name: data[0].name, href: "" },
-            ];
+            let path = [{ name: "Phụ Kiện", href: "/accessory" }];
             let mainItem = options.filter((option) => {
               return (option.detail = capacity);
             });

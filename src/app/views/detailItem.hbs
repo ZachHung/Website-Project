@@ -42,6 +42,16 @@
 			</a>
 		</li>
 		{{/each}}
+		<li>
+			<i class='fas fa-greater-than path-icon-next'></i>
+		</li>
+		<li>
+			<a href="">
+
+				<span>{{item.name}}</span>
+
+			</a>
+		</li>
 
 	</ul>
 	<div class='detailItem-main-container'>
@@ -259,7 +269,41 @@
 				</div>
 
 			</div>
+			
+			<div class="swiper mySwiper4 mobile">
+				<div class="swiper-wrapper">
+					{{#each sameItem}}
+					<div class='swiper-slide'>
+						<div class="swiper3-slide-item">
+							<a href="/{{../item.type}}/{{this.slug}}-{{this.options.0.detail}}" class="sameItemImg">
+								<img src="{{this.options.0.color.0.image}}" alt="{{this.name}}" />
+							</a>
 
+							<div class="slide-item-info">
+								<a href="/{{../item.type}}/{{this.slug}}-{{this.options.0.detail}}"
+									class="swiper3-item-name">{{this.name}}</a>
+								<p>
+									<span class="swiper3-item-newPrice">{{currentChange this.options.0.color.0.price}}</span> <span
+										class="swiper3-item-oldPrice">{{currentChangeDiscount this.options.0.color.0.price
+										this.options.0.color.0.discount}}</span>
+								</p>
+							</div>
+
+						</div>
+
+					</div>
+					{{/each}}
+
+				</div>
+
+				<div class='same-swiper-icon-prev'>
+					<i class='fas fa-less-than'></i>
+				</div>
+				<div class='same-swiper-icon-next'>
+					<i class='fas fa-greater-than'></i>
+				</div>
+
+			</div>
 		</div>
 
 
