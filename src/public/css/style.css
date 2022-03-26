@@ -689,6 +689,7 @@ header .account__options li:first-child h2 {
   .header__utility .icon {
     font-size: 2.3rem;
   }
+
   .header__spacer,
   .footer__spacer {
     display: none;
@@ -700,6 +701,9 @@ header .account__options li:first-child h2 {
 
   footer {
     flex-direction: column;
+  }
+  footer .contact__social {
+    margin-top: 1rem;
   }
   .footer__copyright {
     margin-top: 2rem;

@@ -292,8 +292,10 @@ section .glide__nav .glide__bullet--active::after {
     padding-top: calc(5rem + 50px);
   }
   .hero__left {
+    display: flex;
+    flex-direction: column;
     flex: none;
-    align-items: flex-start;
+    align-items: center;
   }
   #glide_1 .glide__slide {
     background-size: 170%;
@@ -301,6 +303,7 @@ section .glide__nav .glide__bullet--active::after {
   }
   .hero__center {
     align-items: flex-start;
+    justify-content: center;
   }
   .hero,
   .hero .glide__slides {
@@ -323,6 +326,7 @@ section .glide__nav .glide__bullet--active::after {
     height: 100%;
   }
   .spotlight__item .name {
+    width: 80%;
     bottom: 1.5rem;
     text-align: center;
   }
