@@ -725,12 +725,15 @@
     margin-top: 2rem;
   }
   .detailItem-about .modal {
-    margin-top: 5rem;
+    margin-top: 4.5rem;
   }
   .detailItem-sub .same-item-title {
     margin-left: 20px;
   }
   .mySwiper4 {
     display: block;
+  }
+  .detailItem-about .modal .modal-close-btn {
+    margin-left: 26rem;
   }
 }
