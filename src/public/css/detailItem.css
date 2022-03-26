@@ -363,13 +363,11 @@
   display: block;
 }
 
-.detailItem-sub .mySwiper3 .slide-item-info,
-.detailItem-sub .mySwiper4 .slide-item-info {
+.detailItem-sub .mySwiper3 .slide-item-info {
   padding-left: 1rem;
   margin-top: 3.5rem;
 }
-.detailItem-sub .mySwiper3 .slide-item-info p,
-.detailItem-sub .mySwiper4 .slide-item-info p {
+.detailItem-sub .mySwiper3 .slide-item-info p {
   margin-top: 2rem;
   font-size: 1.4rem;
 }
@@ -377,17 +375,18 @@
 .detailItem-sub .swiper4-item-newPrice {
   color: red;
 }
-.detailItem-sub .swiper3-item-oldPrice,
-.detailItem-sub .swiper4-item-oldPrice {
+.detailItem-sub .swiper3-item-oldPrice {
   margin-left: 1rem;
   text-decoration: line-through;
 }
-.detailItem-sub .mySwiper3 .swiper-slide .sameItemImg {
+.detailItem-sub .mySwiper3 .swiper-slide .sameItemImg,
+.detailItem-sub .mySwiper4 .swiper-slide .sameItemImg {
   display: block;
   padding-top: 2rem;
   height: 18rem;
 }
-.detailItem-sub .mySwiper3 .swiper3-item-name {
+.detailItem-sub .mySwiper3 .swiper3-item-name,
+.detailItem-sub .mySwiper4 .swiper3-item-name {
   color: #000;
   font-weight: bold;
   height: 3rem;
@@ -401,6 +400,23 @@
   text-align: none;
   transition: transform ease 0.2s;
 }
+.detailItem-sub .swiper4-slide-item {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  text-align: none;
+  transition: transform ease 0.2s;
+}
+.detailItem-sub .mySwiper4 .swiper-wrapper {
+  height: 80%;
+}
+
+.detailItem-sub .mySwiper4 .swiper-slide .sameItemImg {
+  display: block;
+  padding-top: 2rem;
+  height: 14rem;
+}
 .swiper3-slide-item:hover {
   transform: scale(102%);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
@@ -410,10 +426,12 @@
   margin: 0 auto;
   height: unset;
 }
-.detailItem-sub .mySwiper3:hover .same-swiper-icon-next {
+.detailItem-sub .mySwiper3:hover .same-swiper-icon-next,
+.detailItem-sub .mySwiper4:hover .same-swiper-icon-next {
   display: block;
 }
-.detailItem-sub .mySwiper3:hover .same-swiper-icon-prev {
+.detailItem-sub .mySwiper3:hover .same-swiper-icon-prev,
+.detailItem-sub .mySwiper4:hover .same-swiper-icon-prev {
   display: block;
 }
 .detailItem-sub .same-item {
@@ -421,7 +439,7 @@
 }
 .detailItem-sub .mySwiper3 .same-swiper-icon-prev {
   position: absolute;
-  top: 14rem;
+  top: 10rem;
   left: 5px;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.6);
@@ -431,9 +449,21 @@
   transition: transform ease 1s;
   animation: navSameSide ease 0.5s;
 }
+.detailItem-sub .mySwiper4 .same-swiper-icon-prev {
+  position: absolute;
+  top: 12rem;
+  left: 5px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  display: none;
+  transition: transform ease 1s;
+  animation: navSameSide ease 0.5s;
+}
 .detailItem-sub .mySwiper3 .same-swiper-icon-next {
   position: absolute;
-  top: 14rem;
+  top: 10rem;
   right: 5px;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.6);
@@ -443,15 +473,52 @@
   transition: transform ease 1s;
   animation: navSameSide ease 0.5s;
 }
+.detailItem-sub .mySwiper4 .same-swiper-icon-next {
+  position: absolute;
+  top: 12rem;
+  right: 5px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  display: none;
+  transition: transform ease 1s;
+  animation: navSameSide ease 0.5s;
+}
 .detailItem-sub .mySwiper3 .same-swiper-icon-prev i,
-.detailItem-sub .mySwiper3 .same-swiper-icon-next i {
+.detailItem-sub .mySwiper3 .same-swiper-icon-next i,
+.detailItem-sub .mySwiper4 .same-swiper-icon-prev i,
+.detailItem-sub .mySwiper4 .same-swiper-icon-next i {
   color: #fff;
   font-size: 1.5rem;
   font-weight: 200;
 }
 .detailItem-sub .mySwiper3 .same-swiper-icon-prev:hover,
-.detailItem-sub .mySwiper3 .same-swiper-icon-next:hover {
+.detailItem-sub .mySwiper3 .same-swiper-icon-next:hover,
+.detailItem-sub .mySwiper4 .same-swiper-icon-prev:hover,
+.detailItem-sub .mySwiper4 .same-swiper-icon-next:hover {
   cursor: pointer;
+}
+.detailItem-sub .mySwiper4 .swiper-slide {
+  width: 25%;
+}
+.detailItem-sub .mySwiper4 .swiper4-item-name {
+  color: #000;
+  font-weight: bold;
+  height: 3rem;
+  display: block;
+  font-size: 14px !important;
+}
+.detailItem-sub .mySwiper4 .slide-item-info {
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+.detailItem-sub .mySwiper4 .slide-item-info p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.detailItem-sub .swiper4-item-oldPrice {
+  text-decoration: line-through;
 }
 .detailItem-sub .rate-technicalInfo {
   display: grid;
@@ -610,7 +677,7 @@
 }
 @media only screen and (max-width: 739px) {
   .path {
-    padding: 20px;
+    padding: 20px 0px 20px 20px;
   }
   .item-name {
     padding: 20px;
@@ -635,15 +702,17 @@
     margin: 0 auto;
   }
   .detailItem-option {
-    width: 100%;
+    width: 90%;
     max-width: 100%;
     position: static;
+    margin-top: 2rem;
   }
   .detailItem-about {
     width: 90%;
     max-width: 100%;
-    margin-top: 50px;
+
     margin: 50px auto 0 auto;
+    padding: 0;
   }
   .detailItem-sub {
     max-width: 100%;
@@ -651,5 +720,17 @@
   }
   .mySwiper3 {
     display: none;
+  }
+  .detailItem-sub .same-item {
+    margin-top: 2rem;
+  }
+  .detailItem-about .modal {
+    margin-top: 5rem;
+  }
+  .detailItem-sub .same-item-title {
+    margin-left: 20px;
+  }
+  .mySwiper4 {
+    display: block;
   }
 }

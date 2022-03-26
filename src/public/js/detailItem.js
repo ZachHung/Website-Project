@@ -24,7 +24,7 @@ var swiper3 = new Swiper(".mySwiper3", {
   },
 });
 var swiper3 = new Swiper(".mySwiper4", {
-  slidesPerView: 2,
+  slidesPerView: 3,
   spaceBetween: 0,
   navigation: {
     nextEl: ".same-swiper-icon-next",

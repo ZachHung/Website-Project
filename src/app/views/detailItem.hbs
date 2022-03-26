@@ -2,7 +2,7 @@
 {{#section 'head'}}
 <title>Mua {{item.name}} giá rẻ, trả góp 0% </title>
 <meta name="description"
-	content="Mua {{item.name}} ở 13Team trả góp 0%, tiết kiệm chi phí, giao hàng giá rẻ. Đảm bảo sản phẩm uy tín, chính hãng 100%">
+	content="{{item.description}}">
 <meta name="keywords"
 	content="13Team, 13 Team, {{item.name}}, mua {{item.name}} giá rẻ, {{item.name}} chính hãng, mua {{item.name}}, khuyến mãi {{item.name}}">
 {{!-- Canonical Links | Để link là link sản phẩm gốc là được --}}
@@ -274,17 +274,17 @@
 				<div class="swiper-wrapper">
 					{{#each sameItem}}
 					<div class='swiper-slide'>
-						<div class="swiper3-slide-item">
+						<div class="swiper4-slide-item">
 							<a href="/{{../item.type}}/{{this.slug}}-{{this.options.0.detail}}" class="sameItemImg">
 								<img src="{{this.options.0.color.0.image}}" alt="{{this.name}}" />
 							</a>
 
 							<div class="slide-item-info">
 								<a href="/{{../item.type}}/{{this.slug}}-{{this.options.0.detail}}"
-									class="swiper3-item-name">{{this.name}}</a>
+									class="swiper4-item-name">{{this.name}}</a>
 								<p>
 									<span class="swiper3-item-newPrice">{{currentChange this.options.0.color.0.price}}</span> <span
-										class="swiper3-item-oldPrice">{{currentChangeDiscount this.options.0.color.0.price
+										class="swiper4-item-oldPrice">{{currentChangeDiscount this.options.0.color.0.price
 										this.options.0.color.0.discount}}</span>
 								</p>
 							</div>
