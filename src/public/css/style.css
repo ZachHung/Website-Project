@@ -647,11 +647,6 @@ header .account__options li:first-child h2 {
 
 /* Responsive */
 @media only screen and (max-width: 739px) {
-  header {
-    z-index: 10;
-    position: fixed;
-  }
-
   .header-container {
     flex-direction: column;
     align-items: flex-start;
