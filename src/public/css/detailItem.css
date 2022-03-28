@@ -1,7 +1,7 @@
-.active {
+.detailIitem-main .active {
   border: 1px solid #ff0000 !important;
 }
-.active:after {
+.detailIitem-main .active:after {
   content: "\f00c";
   font-family: "Font Awesome 5 Pro";
   text-align: center;
