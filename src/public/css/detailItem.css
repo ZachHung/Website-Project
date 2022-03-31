@@ -323,8 +323,20 @@
   cursor: pointer;
   transform: scale(102%);
 }
-.detailItem-about {
-  padding-left: 1rem;
+.detailItem-option .description__title {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.detailItem-option .description__container {
+  box-shadow: rgb(60 64 67 / 10%) 0px 0px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 0px 6px 2px;
+  margin: 4rem 1rem 0 0rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.detailItem-option .description__detail {
+  font-size: 14px;
 }
 .detailItem-about-container {
   border: 1px solid #ccc;
