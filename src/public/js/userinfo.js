@@ -15,7 +15,6 @@ const ward = document.getElementById("address__ward");
 const addressdetail = document.getElementById("address__detail");
 districtdefault = document.getElementById("district__default");
 warddefault = document.getElementById("ward__default");
-console.log([districtdefault, warddefault]);
 
 if (province.getAttribute("data") != "") {
   let userProvince = province.getAttribute("data");
@@ -39,11 +38,6 @@ if (province.getAttribute("data") != "") {
   });
   ward.disabled = false;
   addressdetail.disabled = false;
-
-  console.log([userProvince, userDistrict, userWard]);
-  console.log(provinceOptions);
-  console.log(districtOptions);
-  console.log(wardOptions);
 }
 
 //reder district //
@@ -59,7 +53,6 @@ function renderDistrict(arrayDistrict) {
 // ///
 
 province.addEventListener("change", () => {
-  console.log(province.value);
   if (province.value === "") {
     district.disabled = true;
     ward.disabled = true;
@@ -69,7 +62,6 @@ province.addEventListener("change", () => {
     fetch("/address/district/?province=" + province.value)
       .then((districts) => districts.json())
       .then((districts) => {
-        console.log(districts);
         renderDistrict(districts);
       });
   }
@@ -84,7 +76,6 @@ function renderWard(arrayWard) {
 }
 
 district.addEventListener("change", () => {
-  console.log([province.value, district.value]);
   if (district.value === "") {
     ward.disabled = true;
     addressdetail.disabled = true;
@@ -95,7 +86,6 @@ district.addEventListener("change", () => {
     )
       .then((wards) => wards.json())
       .then((wards) => {
-        console.log(wards);
         renderWard(wards);
       });
   }
@@ -110,8 +100,7 @@ ward.addEventListener("change", () => {
 });
 const addressRow = document.querySelector(".userinfo-form .row-address");
 const addressError = addressRow.parentElement.querySelector(".error-message");
-console.log(addressError);
-console.log(addressRow);
+
 addressRow.addEventListener("focusin", (e) => {
   addressError.innerText = "";
 });
@@ -132,7 +121,6 @@ Validator({
     Validator.isPhone("#userinfo-phone"),
   ],
   onSubmit: function (data) {
-    console.log(data);
     if (checkAdress()) {
       genderOptions.forEach((option) => {
         if (option.checked == true) {
@@ -160,7 +148,6 @@ Validator({
           }
         });
     } else {
-      console.log("sai");
       addressError.innerText = "Địa chỉ không hợp lệ";
     }
   },
