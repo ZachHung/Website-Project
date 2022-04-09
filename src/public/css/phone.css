@@ -400,15 +400,16 @@ li {
   }
   .list-products .product-layout {
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin: 0 auto;
-  padding: 0 auto;
+  
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .list-products .product-layout {
     gap: 1rem;    
+  }
+  .filter {
+    margin-left: 2rem;
   }
   .product {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -451,15 +452,4 @@ li {
     margin-right: 0.2rem;
     position: relative;
   }
-  .filter {
-    margin-left: 2rem;
-  }
-  .section{  
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: auto;
-  }
 }
-
-

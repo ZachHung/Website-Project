@@ -59,7 +59,6 @@
   padding-bottom: 5rem;
   padding-top: 3rem;
   gap: 2rem;
-  
 }
 .asc-price{
   background-color: #f8dede;
@@ -300,13 +299,6 @@
     
 
 @media only screen and (max-width: 480px) {
-  /* .section{
-    display: flex;
-  justify-content: center;
-  align-items: center;
-    padding: 0;
-    margin: auto;
-  } */
   .list-products .product-layout {
    
     grid-template-columns: repeat(2, 11.5em);
@@ -363,15 +355,7 @@
   }
 
 }
-@media only screen and (max-width: 768px) {
-  
-  /* .section{
-    display: flex;
-  justify-content: center;
-  align-items: center;
-    padding: 0;
-    margin: auto;
-  } */
+@media only screen and (max-width: 1024px) {
   .list-products .product-layout {
     margin: auto;
     gap: 1rem;    
@@ -420,21 +404,13 @@
     margin-right: 0.2rem;
     position: relative;
   }
-  .filter {
+  .filter-box, .numProduct {
     margin-left: 2rem;
   }
 }
 
 
-
 @media only screen and (max-width: 375px) {
-  /* .section{
-    display: flex;
-  justify-content: center;
-  align-items: center;
-    padding: 0;
-    margin: auto;
-  } */
   .list-products .product-layout {
     margin: auto;
    
@@ -443,7 +419,7 @@
     margin: 0 auto;
     
   }
-}
+} 
 
 @media only screen and (max-width: 320px) {
   
