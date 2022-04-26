@@ -12,3 +12,5 @@ Disallow: /checkout
 Disallow: /checkout/*
 Disallow: /search
 Disallow: /search/*
+
+Sitemap: https://team-13.herokuapp.com/sitemap.xml
