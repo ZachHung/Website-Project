@@ -1,367 +1,495 @@
-{{!-- Head session --}}
-{{#section 'head'}}
-<title>13 Team - Điện thoại, laptop, tablet, phụ kiện chính hãng</title>
-<meta name="description"
-	content="Bán lẻ điện thoại, máy tính bảng, laptop, phụ kiện chính hãng | Giá rẻ, khuyến mãi, trả góp 0%, giao hàng miễn phí. Uy tín, ưu tiên quyền lợi khách hàng">
-<meta name="keywords"
-	content="13Team, 13 Team, điện thoại di dộng, giá rẻ, trả góp 0%, tablet điện thoại chính hãng, smartphones, laptop, laptop chính hãng, điện thoại, máy tính bảng, tablet chính hãng, phụ kiện, phụ kiện laptop, phụ kiện điện thoại, dien thoai di dong, dien thoai chinh hang, smartphones, laptop chinh hang, dien thoai, may tinh bang, tablet chinh hang, phu kien chinh hang, phu kien laptop, phu kien dien thoai">
-{{!-- OpenGraph tags --}}
-<meta property="og:title" content="13 Team - Điện thoại, laptop, tablet, phụ kiện chính hãng">
-<meta property="og:description"
-	content="Bán lẻ điện thoại, máy tính bảng, laptop, phụ kiện chính hãng | Giá rẻ, khuyến mãi, trả góp 0%, giao hàng miễn phí.">
-<meta property="og:url" content="https://team-13.herokuapp.com/">
-<meta property="og:image" content="https://team-13.herokuapp.com/image/logo-s.png">
-<meta property="og:image:secure_url" content="https://team-13.herokuapp.com/image/logo-s.png">
-<meta property="og:image:alt" content="13Team Brand's logo">
-<meta property="og:type" content="website">
+{{! Head session }}
+{{#section "head"}}
+  <title>13 Team - Điện thoại, laptop, tablet, phụ kiện chính hãng</title>
+  <meta
+    name="description"
+    content="Bán lẻ điện thoại, máy tính bảng, laptop, phụ kiện chính hãng | Giá rẻ, khuyến mãi, trả góp 0%, giao hàng miễn phí. Uy tín, ưu tiên quyền lợi khách hàng"
+  />
+  <meta
+    name="keywords"
+    content="13Team, 13 Team, điện thoại di dộng, giá rẻ, trả góp 0%, tablet điện thoại chính hãng, smartphones, laptop, laptop chính hãng, điện thoại, máy tính bảng, tablet chính hãng, phụ kiện, phụ kiện laptop, phụ kiện điện thoại, dien thoai di dong, dien thoai chinh hang, smartphones, laptop chinh hang, dien thoai, may tinh bang, tablet chinh hang, phu kien chinh hang, phu kien laptop, phu kien dien thoai"
+  />
+  {{! OpenGraph tags }}
+  <meta
+    property="og:title"
+    content="13 Team - Điện thoại, laptop, tablet, phụ kiện chính hãng"
+  />
+  <meta
+    property="og:description"
+    content="Bán lẻ điện thoại, máy tính bảng, laptop, phụ kiện chính hãng | Giá rẻ, khuyến mãi, trả góp 0%, giao hàng miễn phí."
+  />
+  <meta property="og:url" content="https://team-13.herokuapp.com/" />
+  <meta
+    property="og:image"
+    content="https://team-13.herokuapp.com/image/logo-s.png"
+  />
+  <meta
+    property="og:image:secure_url"
+    content="https://team-13.herokuapp.com/image/logo-s.png"
+  />
+  <meta property="og:image:alt" content="13Team Brand's logo" />
+  <meta property="og:type" content="website" />
 {{/section}}
 
 {{! Links }}
 {{! AOS }}
-<link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet' />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 {{! GlideJS CSS }}
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css' />
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css' />
-<link rel='stylesheet' href='css/home.css' />
-<div class='landing-page'>
-	{{! Hero }}
-	<section class='hero'>
-		<div class='glide' id='glide_1'>
-			<div class='glide__track' data-glide-el='track'>
-				<ul class='glide__slides'>
-					<li class='glide__slide slide_1'>
-						<div class='hero__center'>
-							<div class='hero__left'>
-								<span class=''>
-									Sản phẩm mới
-								</span>
-								<h1 class=''>
-									Iphone 13 Pro/Pro Max
-								</h1>
-								<p>
-									Thiết kế đặc trưng với màu sắc thời thượng
-								</p>
-								<a href='/phone/iphone13-128GB'>
-									<button class='hero__btn txt-white'>
-										Mua Ngay
-									</button>
-								</a>
-							</div>
-						</div>
-					</li>
-					<li class='glide__slide slide_2'>
-						<div class='hero__center'>
-							<div class='hero__left'>
-								<span class=''>
-									Sản phẩm mới
-								</span>
-								<h1>
-									Galaxy Z Fold 3
-								</h1>
-								<p>
-									Sẵn sàng mở ra tiềm năng công nghệ mới
-								</p>
-								<a href='/phone/zfold3-256GB'>
-									<button class='hero__btn txt-white'>
-										Mua Ngay
-									</button>
-								</a>
-							</div>
-						</div>
-					</li>
-					<li class='glide__slide slide_3'>
-						<div class='hero__center'>
-							<div class='hero__left'>
-								<span class=''>
-									Sản phẩm mới
-								</span>
-								<h1>
-									Macbook Pro 2021
-								</h1>
-								<p>
-									Thiết kế vượt trội cho người dùng chuyên nghiệp
-								</p>
-								<a href='/laptop/macbook_pro_m1_2021-512GB'>
-									<button class='hero__btn txt-white'>
-										Mua Ngay
-									</button>
-								</a>
-							</div>
-						</div>
-					</li>
-				</ul>
-				<div class='glide__arrows' data-glide-el='controls'>
-					<button class='glide__arrow glide__arrow--left' data-glide-dir='<'>
-						<i class='far fa-chevron-left'></i>
-					</button>
-					<button class='glide__arrow glide__arrow--right' data-glide-dir='>'>
-						<i class='far fa-chevron-right'></i>
-					</button>
-				</div>
-			</div>
-			<div class='glide__bullets' data-glide-el='controls[nav]'>
-				<button class='glide__bullet' data-glide-dir='=0'></button>
-				<button class='glide__bullet' data-glide-dir='=1'></button>
-				<button class='glide__bullet' data-glide-dir='=2'></button>
-			</div>
-		</div>
-	</section>
-	{{! End of Hero }}
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css"
+/>
+<link rel="stylesheet" href="css/home.css" />
+<div id="fb-root" class="landing-page">
+  {{! Hero }}
+  <section class="hero">
+    <div class="glide" id="glide_1">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide slide_1">
+            <div class="hero__center">
+              <div class="hero__left">
+                <span class="">
+                  Sản phẩm mới
+                </span>
+                <h1 class="">
+                  Iphone 13 Pro/Pro Max
+                </h1>
+                <p>
+                  Thiết kế đặc trưng với màu sắc thời thượng
+                </p>
+                <a href="/phone/iphone13-128GB">
+                  <button class="hero__btn txt-white">
+                    Mua Ngay
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="glide__slide slide_2">
+            <div class="hero__center">
+              <div class="hero__left">
+                <span class="">
+                  Sản phẩm mới
+                </span>
+                <h1>
+                  Galaxy Z Fold 3
+                </h1>
+                <p>
+                  Sẵn sàng mở ra tiềm năng công nghệ mới
+                </p>
+                <a href="/phone/zfold3-256GB">
+                  <button class="hero__btn txt-white">
+                    Mua Ngay
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="glide__slide slide_3">
+            <div class="hero__center">
+              <div class="hero__left">
+                <span class="">
+                  Sản phẩm mới
+                </span>
+                <h1>
+                  Macbook Pro 2021
+                </h1>
+                <p>
+                  Thiết kế vượt trội cho người dùng chuyên nghiệp
+                </p>
+                <a href="/laptop/macbook_pro_m1_2021-512GB">
+                  <button class="hero__btn txt-white">
+                    Mua Ngay
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <i class="far fa-chevron-left"></i>
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <i class="far fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="glide__bullets" data-glide-el="controls[nav]">
+        <button class="glide__bullet" data-glide-dir="=0"></button>
+        <button class="glide__bullet" data-glide-dir="=1"></button>
+        <button class="glide__bullet" data-glide-dir="=2"></button>
+      </div>
+    </div>
+  </section>
+  {{! End of Hero }}
 
-	{{! Spotlights }}
-	<section data-aos='fade-up' data-aos-anchor-placement='top-center'>
-		<h1 class='section-title'>
-			Sản phẩm nổi bật
-		</h1>
-		<div class='glide' id='glide_2'>
-			<div class='glide__nav' data-glide-el='controls[nav]'>
-				<div class='title' data-glide-dir='=0'>
-					Điện thoại
-				</div>
-				<div class='title' data-glide-dir='=1'>
-					Laptop
-				</div>
-				<div class='title' data-glide-dir='=2'>
-					Tablet
-				</div>
-				<div class='title' data-glide-dir='=3'>
-					Phụ kiện
-				</div>
-			</div>
-			<div class='glide__track' data-glide-el='track'>
-				<ul class='glide__slides'>
-					<li class='glide__slide'>
-						<div class='spotlight grid-col-1-2-1'>
-							<div class='grid-col-1'>
-								<div class='spotlight__item'>
-									<img src='/image/landing_page/slide2/asus-rog-phone-5s.jpg' alt='Ảnh sản phẩm' />
-									<p class='name'>Asus Rog Phone 5s
-									</p>
-									<a href='/phone/rogphone5s-64GB'>
-										<button>
-											Mua Ngay
-										</button>
-									</a>
-								</div>
-								<div class='spotlight__item'>
-									<img src='/image/landing_page/slide2/xiaomi-mi-11.png' alt='Ảnh sản phẩm' />
-									<p class='name'>Xiaomi Mi 11
-									</p>
-									<a href='/phone/mi11-128GB'>
-										<button>
-											Mua Ngay
-										</button>
-									</a>
-								</div>
-							</div>
-							<div class='spotlight__item'>
-								<img src='/image/landing_page/slide2/samsung-galaxy-s21-ultra.jpg' alt='Samsung Week' />
-								<p class='name'>
-									Galaxy S21 Ultra
-								</p>
-								<a href='/phone/s21ultra-128GB'>
-									<button>
-										Mua Ngay
-									</button>
-								</a>
-							</div>
-							<div class='grid-col-1'>
-								<div class='spotlight__item'>
-									<img src='/image/landing_page/slide2/redmi-k40.jpg' alt='Ảnh sản phẩm' />
-									<p class='name'>
-										Redmi K40
-									</p>
-									<a href='/phone/redmi_k40-128GB'>
-										<button>
-											Mua Ngay
-										</button>
-									</a>
-								</div>
-								<div class='spotlight__item'>
-									<img src='/image/landing_page/slide2/iphone-11-pro-max-trang.jpg' alt='Ảnh sản phẩm' />
-									<p class='name'>
-										iPhone 11 Pro Max
-									</p>
-									<a href='/phone/iphone11-256GB'>
-										<button>
-											Mua Ngay
-										</button>
-									</a>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class='glide__slide'>
-						<div class='spotlight grid-col-1-1-2'>
-							<div class='grid-col-1'>
-								<div class='spotlight__item'>
-									<img src='/image/landing_page/slide2/acer-aspire-7-a715.jpg' alt='Ảnh sản phẩm' />
-									<p class='name'>
-										Acer Aspire 7 A715
-									</p>
-									<a href='/laptop/aspire7-256GB'>
-										<button>
-											Mua Ngay
-										</button>
-									</a>
-								</div>
-								<div class='spotlight__item'>
-									<img src='/image/landing_page/slide2/acer-aspire-a315.jpg' alt='Ảnh sản phẩm' />
-									<p class='name'>
-										Acer Aspire A315
-									</p>
-									<a href='/laptop/a315_56_308n-256GB'>
-										<button>
-											Mua Ngay
-										</button>
-									</a>
-								</div>
-							</div>
-							<div class='grid-col-1'>
-								<div class='spotlight__item'>
-									<img src='/image/landing_page/slide2/hp-pavilion-15-eg0505tx.jpg' alt='Ảnh sản phẩm' />
-									<p class='name'>
-										HP Pavilion 15
-									</p>
-									<a href='/laptop/pavilion_15-512GB'>
-										<button>
-											Mua Ngay
-										</button>
-									</a>
-								</div>
-								<div class='spotlight__item'>
-									<img src='/image/landing_page/slide2/macbook-air-m1-2020.jpg' alt='Ảnh sản phẩm' />
-									<p class='name'>
-										Macbook Air M1 2020
-									</p>
-									<a href='/laptop/macbook_air_m1_2020-256GB'>
-										<button>
-											Mua Ngay
-										</button>
-									</a>
-								</div>
-							</div>
-							<div class='spotlight__item'>
-								<img src='/image/landing_page/slide2/acer-nitro-5.jpg' alt='Ảnh sản phẩm' />
-								<p class='name'>
-									Acer Nitro 5 AN515 57
-								</p>
-								<a href='/laptop/nitro5-512GB'>
-									<button>
-										Mua Ngay
-									</button>
-								</a>
-							</div>
-						</div>
-					</li>
-					<li class='glide__slide'>
-						<div class='spotlight grid-col-1-1-1'>
-							<div class='spotlight__item'>
-								<img src='/image/landing_page/slide2/ipad-mini-6.png' alt='Ảnh sản phẩm' />
-								<p class='name'>
-									iPad Mini 6
-								</p>
-								<a href='/tablet/ipad_mini_6-64GB'><button>Mua Ngay</button></a>
-							</div>
-							<div class='spotlight__item mobile-hiden'>
-								<img src='/image/landing_page/slide2/ipad-pro-2021.png' alt='Ảnh sản phẩm' />
-								<p class='name'> iPad Pro 2021</p>
-								<a href='/tablet/ipad_pro_m1_2021-128GB'><button>Mua Ngay</button></a>
-							</div>
-							<div class='spotlight__item mobile-hiden'>
-								<img src='/image/landing_page/slide2/samsung-galaxy-tab-s7.png' alt='Ảnh sản phẩm' />
-								<p class='name'>Galaxy Tab S7</p>
-								<a href='/tablet/galaxy_tab_s7-128GB'><button>Mua Ngay</button></a>
-							</div>
-						</div>
-					</li>
-					<li class='glide__slide'>
-						<div class='spotlight grid-col-1-1'>
-							<div class='spotlight__item'>
-								<img src='/image/landing_page/slide2/jbl_450_black.webp' alt='Ảnh sản phẩm' />
-								<p class='name'>
-									Tai nghe JBL T450
-								</p>
-								<a href='/accessory/jbl_t450-Default'>
-									<button>
-										Mua Ngay
-									</button>
-								</a>
-							</div>
-							<div class='spotlight__item'>
-								<img src='/image/landing_page/slide2/Remax-Proda-10000-mAh.jpg' alt='Ảnh sản phẩm' />
-								<p class='name'>
-									Sạc dự phòng Remax Proda 10000mAh
-								</p>
-								<a href='/accessory/proda-10000mAh'>
-									<button>
-										Mua Ngay
-									</button>
-								</a>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-	{{! End of Spotlight }}
+  {{! Spotlights }}
+  <section data-aos="fade-up" data-aos-anchor-placement="top-center">
+    <h1 class="section-title">
+      Sản phẩm nổi bật
+    </h1>
+    <div class="glide" id="glide_2">
+      <div class="glide__nav" data-glide-el="controls[nav]">
+        <div class="title" data-glide-dir="=0">
+          Điện thoại
+        </div>
+        <div class="title" data-glide-dir="=1">
+          Laptop
+        </div>
+        <div class="title" data-glide-dir="=2">
+          Tablet
+        </div>
+        <div class="title" data-glide-dir="=3">
+          Phụ kiện
+        </div>
+      </div>
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <div class="spotlight grid-col-1-2-1">
+              <div class="grid-col-1">
+                <div class="spotlight__item">
+                  <img
+                    src="/image/landing_page/slide2/asus-rog-phone-5s.jpg"
+                    alt="Ảnh sản phẩm"
+                  />
+                  <p class="name">Asus Rog Phone 5s
+                  </p>
+                  <a href="/phone/rogphone5s-64GB">
+                    <button>
+                      Mua Ngay
+                    </button>
+                  </a>
+                </div>
+                <div class="spotlight__item">
+                  <img
+                    src="/image/landing_page/slide2/xiaomi-mi-11.png"
+                    alt="Ảnh sản phẩm"
+                  />
+                  <p class="name">Xiaomi Mi 11
+                  </p>
+                  <a href="/phone/mi11-128GB">
+                    <button>
+                      Mua Ngay
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="spotlight__item">
+                <img
+                  src="/image/landing_page/slide2/samsung-galaxy-s21-ultra.jpg"
+                  alt="Samsung Week"
+                />
+                <p class="name">
+                  Galaxy S21 Ultra
+                </p>
+                <a href="/phone/s21ultra-128GB">
+                  <button>
+                    Mua Ngay
+                  </button>
+                </a>
+              </div>
+              <div class="grid-col-1">
+                <div class="spotlight__item">
+                  <img
+                    src="/image/landing_page/slide2/redmi-k40.jpg"
+                    alt="Ảnh sản phẩm"
+                  />
+                  <p class="name">
+                    Redmi K40
+                  </p>
+                  <a href="/phone/redmi_k40-128GB">
+                    <button>
+                      Mua Ngay
+                    </button>
+                  </a>
+                </div>
+                <div class="spotlight__item">
+                  <img
+                    src="/image/landing_page/slide2/iphone-11-pro-max-trang.jpg"
+                    alt="Ảnh sản phẩm"
+                  />
+                  <p class="name">
+                    iPhone 11 Pro Max
+                  </p>
+                  <a href="/phone/iphone11-256GB">
+                    <button>
+                      Mua Ngay
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div class="spotlight grid-col-1-1-2">
+              <div class="grid-col-1">
+                <div class="spotlight__item">
+                  <img
+                    src="/image/landing_page/slide2/acer-aspire-7-a715.jpg"
+                    alt="Ảnh sản phẩm"
+                  />
+                  <p class="name">
+                    Acer Aspire 7 A715
+                  </p>
+                  <a href="/laptop/aspire7-256GB">
+                    <button>
+                      Mua Ngay
+                    </button>
+                  </a>
+                </div>
+                <div class="spotlight__item">
+                  <img
+                    src="/image/landing_page/slide2/acer-aspire-a315.jpg"
+                    alt="Ảnh sản phẩm"
+                  />
+                  <p class="name">
+                    Acer Aspire A315
+                  </p>
+                  <a href="/laptop/a315_56_308n-256GB">
+                    <button>
+                      Mua Ngay
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="grid-col-1">
+                <div class="spotlight__item">
+                  <img
+                    src="/image/landing_page/slide2/hp-pavilion-15-eg0505tx.jpg"
+                    alt="Ảnh sản phẩm"
+                  />
+                  <p class="name">
+                    HP Pavilion 15
+                  </p>
+                  <a href="/laptop/pavilion_15-512GB">
+                    <button>
+                      Mua Ngay
+                    </button>
+                  </a>
+                </div>
+                <div class="spotlight__item">
+                  <img
+                    src="/image/landing_page/slide2/macbook-air-m1-2020.jpg"
+                    alt="Ảnh sản phẩm"
+                  />
+                  <p class="name">
+                    Macbook Air M1 2020
+                  </p>
+                  <a href="/laptop/macbook_air_m1_2020-256GB">
+                    <button>
+                      Mua Ngay
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="spotlight__item">
+                <img
+                  src="/image/landing_page/slide2/acer-nitro-5.jpg"
+                  alt="Ảnh sản phẩm"
+                />
+                <p class="name">
+                  Acer Nitro 5 AN515 57
+                </p>
+                <a href="/laptop/nitro5-512GB">
+                  <button>
+                    Mua Ngay
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div class="spotlight grid-col-1-1-1">
+              <div class="spotlight__item">
+                <img
+                  src="/image/landing_page/slide2/ipad-mini-6.png"
+                  alt="Ảnh sản phẩm"
+                />
+                <p class="name">
+                  iPad Mini 6
+                </p>
+                <a href="/tablet/ipad_mini_6-64GB"><button>Mua Ngay</button></a>
+              </div>
+              <div class="spotlight__item mobile-hiden">
+                <img
+                  src="/image/landing_page/slide2/ipad-pro-2021.png"
+                  alt="Ảnh sản phẩm"
+                />
+                <p class="name"> iPad Pro 2021</p>
+                <a href="/tablet/ipad_pro_m1_2021-128GB"><button>Mua Ngay</button></a>
+              </div>
+              <div class="spotlight__item mobile-hiden">
+                <img
+                  src="/image/landing_page/slide2/samsung-galaxy-tab-s7.png"
+                  alt="Ảnh sản phẩm"
+                />
+                <p class="name">Galaxy Tab S7</p>
+                <a href="/tablet/galaxy_tab_s7-128GB"><button>Mua Ngay</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div class="spotlight grid-col-1-1">
+              <div class="spotlight__item">
+                <img
+                  src="/image/landing_page/slide2/jbl_450_black.webp"
+                  alt="Ảnh sản phẩm"
+                />
+                <p class="name">
+                  Tai nghe JBL T450
+                </p>
+                <a href="/accessory/jbl_t450-Default">
+                  <button>
+                    Mua Ngay
+                  </button>
+                </a>
+              </div>
+              <div class="spotlight__item">
+                <img
+                  src="/image/landing_page/slide2/Remax-Proda-10000-mAh.jpg"
+                  alt="Ảnh sản phẩm"
+                />
+                <p class="name">
+                  Sạc dự phòng Remax Proda 10000mAh
+                </p>
+                <a href="/accessory/proda-10000mAh">
+                  <button>
+                    Mua Ngay
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  {{! End of Spotlight }}
 
-	{{! Discounted }}
-	<section data-aos='fade-up' data-aos-anchor-placement='top-center'>
-		<h1 class='section-title'>
-			ưu đãi
-		</h1>
-		<div class='spotlight grid-col-2-1-1'>
-			<div class='spotlight__item'>
-				<img src='/image/landing_page/slide2/promotion2.webp' alt='Samsung Week' />
-				<a href='/phone?brand=samsung'>
-					<button>
-						Mua Ngay
-					</button>
-				</a>
-			</div>
-			<div class='grid-col-1'>
-				<div class='spotlight__item'>
-					<img src='/image/landing_page/slide2/promotion1.webp' alt='Ảnh sản phẩm' />
-					<a href='/phone/s21ultra-128GB'>
-						<button>
-							Mua Ngay
-						</button>
-					</a>
-				</div>
-				<div class='spotlight__item'>
-					<img src='/image/landing_page/slide2/promotion.webp' alt='Ảnh sản phẩm' />
-					<a href='/phone?brand=samsung'>
-						<button>
-							Mua Ngay
-						</button>
-					</a>
-				</div>
-			</div>
-			<div class='grid-col-1'>
-				<div class='spotlight__item'>
-					<img src='/image/landing_page/slide2/promotion1.webp' alt='Ảnh sản phẩm' />
-					<a href='/phone/s21ultra-128GB'>
-						<button>
-							Mua Ngay
-						</button>
-					</a>
-				</div>
-				<div class='spotlight__item'>
-					<img src='/image/landing_page/slide2/promotion1.webp' alt='Ảnh sản phẩm' />
-					<a href='/phone/s21ultra-128GB'>
-						<button>
-							Mua Ngay
-						</button>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	{{! End of Discounted }}
+  {{! Discounted }}
+  <section data-aos="fade-up" data-aos-anchor-placement="top-center">
+    <h1 class="section-title">
+      ưu đãi
+    </h1>
+    <div class="spotlight grid-col-2-1-1">
+      <div class="spotlight__item">
+        <img
+          src="/image/landing_page/slide2/promotion2.webp"
+          alt="Samsung Week"
+        />
+        <a href="/phone?brand=samsung">
+          <button>
+            Mua Ngay
+          </button>
+        </a>
+      </div>
+      <div class="grid-col-1">
+        <div class="spotlight__item">
+          <img
+            src="/image/landing_page/slide2/promotion1.webp"
+            alt="Ảnh sản phẩm"
+          />
+          <a href="/phone/s21ultra-128GB">
+            <button>
+              Mua Ngay
+            </button>
+          </a>
+        </div>
+        <div class="spotlight__item">
+          <img
+            src="/image/landing_page/slide2/promotion.webp"
+            alt="Ảnh sản phẩm"
+          />
+          <a href="/phone?brand=samsung">
+            <button>
+              Mua Ngay
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="grid-col-1">
+        <div class="spotlight__item">
+          <img
+            src="/image/landing_page/slide2/promotion1.webp"
+            alt="Ảnh sản phẩm"
+          />
+          <a href="/phone/s21ultra-128GB">
+            <button>
+              Mua Ngay
+            </button>
+          </a>
+        </div>
+        <div class="spotlight__item">
+          <img
+            src="/image/landing_page/slide2/promotion1.webp"
+            alt="Ảnh sản phẩm"
+          />
+          <a href="/phone/s21ultra-128GB">
+            <button>
+              Mua Ngay
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{! End of Discounted }}
+  <div class="embend__container">
+    <div class="facebook__container">
+      <div
+        class="fb-page"
+        data-href="https://www.facebook.com/hTWOndnt"
+        data-tabs=""
+        data-width="500"
+        data-height="200"
+        data-small-header="true"
+        data-adapt-container-width="true"
+        data-hide-cover="false"
+        data-show-facepile="true"
+      ><blockquote
+          cite="https://www.facebook.com/hTWOndnt"
+          class="fb-xfbml-parse-ignore"
+        ><a href="https://www.facebook.com/hTWOndnt">13 Team - Đồ điện tử uy tín</a></blockquote></div>
+      <div
+        class="fb-comments"
+        data-href="https://www.facebook.com/hTWOndnt"
+        data-width=""
+        data-numposts="5"
+        data-mobile="true"
+        data-colorscheme="dark"
+      ></div>
+    </div>
+    <div class="google__container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.290881236049!2d106.71360531480079!3d10.789018992312938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528acc6172bad%3A0xae25d5ef1748a1c1!2zMzBNLzMwIMSQxrDhu51uZyBOZ8O0IFThuqV0IFThu5EsIFBoxrDhu51uZyAyMiwgQsOsbmggVGjhuqFuaCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1sen!2s!4v1651158515785!5m2!1sen!2s"
+        width="500"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+  </div>
+
 </div>
 {{! Srcipts }}
-<script src='https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js'></script>
-<script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
-<script src='js/home.js'></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"
+></script>
+<script
+  async
+  defer
+  crossorigin="anonymous"
+  src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0"
+  nonce="IhOyHEia"
+></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/home.js"></script>

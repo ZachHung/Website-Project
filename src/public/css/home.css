@@ -285,7 +285,20 @@ section .glide__nav .glide__bullet--active::after {
 .footer__spacer {
   background-color: #f5f5f5;
 }
-
+.embend__container {
+  margin: 2rem auto 2rem auto;
+  width: 78%;
+  display: flex;
+  justify-items: center;
+}
+.embend__container .google__container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.embend__container .facebook__container {
+  flex: 1;
+}
 /* Responsive */
 @media only screen and (max-width: 739px) {
   .landing-page > section:nth-child(2) {
@@ -346,5 +359,14 @@ section .glide__nav .glide__bullet--active::after {
   .spotlight__item:hover button {
     opacity: 0;
     animation: none;
+  }
+  .embend__container {
+    display: block;
+  }
+  .embend__container .google__container {
+    width: 100%;
+  }
+  .embend__container .facebook__container {
+    width: 100%;
   }
 }
