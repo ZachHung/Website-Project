@@ -61,6 +61,10 @@ app.engine(
         }).format(price);
         return price;
       },
+      changeString: (value) => {
+        let result = `\"${value}\"`;
+        return result;
+      },
       firstName: (fullName) => {
         return fullName.split(" ").splice(-1).join(" ");
       },
