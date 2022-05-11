@@ -28,7 +28,7 @@ class ItemController {
             });
             console.log(path);
             let item = data.filter((phone) => phone.slug == type)[0];
-            console.log(data);
+
             let alloptions = item.options;
             let techinfo = item.techInfo;
             let demoinfo = [];

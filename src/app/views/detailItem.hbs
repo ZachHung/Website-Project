@@ -16,7 +16,22 @@
 <meta property="og:image:secure_url" content="https://team-13.herokuapp.com{{item.image.[0]}}">
 <meta property="og:image:alt" content="Ảnh {{item.name}}">
 <meta property="og:type" content="product">
-
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Product",
+  "name" : {{item.name}},
+  "description" : {{item.description}},
+  "brand" : {
+    "@type" : "Brand",
+    "name" : "Xiaomi"
+  },
+  "offers" : {
+    "@type" : "Offer",
+    "price" : {{color.0.price}}
+  }
+}
+</script>
 {{/section}}
 
 <link rel='stylesheet' href='/css/detailItem.css' />
@@ -26,7 +41,7 @@
 		<li>
 			<a href='/'>
 				<i class='fas fa-home path-icon-home'></i>
-				<span>Trang Chủ ...</span>
+				<span>Trang Chủ</span>
 
 			</a>
 		</li>
