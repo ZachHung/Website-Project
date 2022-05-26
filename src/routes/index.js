@@ -9,20 +9,22 @@ const addressrouter = require("./address");
 const laptoprouter = require("./laptop");
 const tabletrouter = require("./tablet");
 const accessorytrouter = require("./accessory");
+const blogsRouter = require("./blogs");
 
 function route(app) {
-	app.use("/search", searchrouter);
-	app.use("/laptop", laptoprouter);
-	app.use("/accessory", accessorytrouter);
-	app.use("/tablet", tabletrouter);
-	app.use("/address", addressrouter);
-	app.use("/purchase", purchaserouter);
-	app.use("/account", accountrouter);
-	app.use("/checkout", checkoutrouter);
-	app.use("/phone", phonerouter);
-	app.use("/user", userrouter);
-	app.get("/", (req, res) => {
-		res.render("home");
-	});
+  app.use("/search", searchrouter);
+  app.use("/laptop", laptoprouter);
+  app.use("/accessory", accessorytrouter);
+  app.use("/tablet", tabletrouter);
+  app.use("/address", addressrouter);
+  app.use("/purchase", purchaserouter);
+  app.use("/account", accountrouter);
+  app.use("/checkout", checkoutrouter);
+  app.use("/phone", phonerouter);
+  app.use("/user", userrouter);
+  app.use("/posts", blogsRouter);
+  app.get("/", (req, res) => {
+    res.render("home");
+  });
 }
 module.exports = route;

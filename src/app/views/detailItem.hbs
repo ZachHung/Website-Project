@@ -1,16 +1,14 @@
 {{!-- Head session --}}
 {{#section 'head'}}
 <title>Mua {{item.name}} giá rẻ, trả góp 0% </title>
-<meta name="description"
-	content="{{item.description}}">
+<meta name="description" content="{{item.description}}">
 <meta name="keywords"
 	content="13Team, 13 Team, {{item.name}}, mua {{item.name}} giá rẻ, {{item.name}} chính hãng, mua {{item.name}}, khuyến mãi {{item.name}}">
 {{!-- Canonical Links | Để link là link sản phẩm gốc là được --}}
 <link rel="canonical" href="https://team-13.herokuapp.com/{{item.type}}/{{item.slug}}-{{capacity}}" />
 {{!-- OpenGraph tags --}}
 <meta property="og:title" content="Mua {{item.name}} giá rẻ, trả góp 0% ">
-<meta property="og:description"
-	content="{{item.description}}">
+<meta property="og:description" content="{{item.description}}">
 <meta property="og:url" content="">
 <meta property="og:image" content="https://team-13.herokuapp.com{{item.image.[0]}}">
 <meta property="og:image:secure_url" content="https://team-13.herokuapp.com{{item.image.[0]}}">
@@ -21,11 +19,7 @@
   "@context" : "http://schema.org",
   "@type" : "Product",
   "name" : "Xiaomi Redmi K40",
-<<<<<<< HEAD
-  "description" : "Redmi K40 Pro sẽ sử dụng chip Snapdragon 888 mạnh mẽ nhất nhưng giá vô cùng rẻ trong phân khúc tầm trung, kèm với dung lượng pin lớn. Đây là điện thoại tốt nhất cho sinh viên với mức giá hợp lí.",
-=======
   "description" : "Redmi K40 Pro sẽ sử dụng chip Snapdragon 888 mạnh mẽ nhất nhưng giá vô cùng rẻ trong phân khúc tầm trung, kèm với dung lượng pin lớn. Đây là điện thoại tốt nhất cho sinh viên với mức giá hợp lí",
->>>>>>> 259dcf3b684718726a2a4c0d3811192512a19515
   "brand" : {
     "@type" : "Brand",
     "name" : "Xiaomi"
@@ -36,10 +30,6 @@
   }
 }
 </script>
-<<<<<<< HEAD
-
-=======
->>>>>>> 259dcf3b684718726a2a4c0d3811192512a19515
 {{/section}}
 
 <link rel='stylesheet' href='/css/detailItem.css' />
@@ -180,10 +170,10 @@
 					<div class="description">
 						<p class='description__title'>Mô Tả Sản Phẩm</p>
 						<p class="description__detail">
-						{{item.description}}
+							{{item.description}}
 						</p>
 					</div>
-					
+
 				</div>
 			</div>
 			<!-- end option -->
@@ -300,7 +290,7 @@
 				</div>
 
 			</div>
-			
+
 			<div class="swiper mySwiper4 mobile">
 				<div class="swiper-wrapper">
 					{{#each sameItem}}
