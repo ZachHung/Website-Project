@@ -1,0 +1,55 @@
+ul {
+  list-style: none;
+}
+.Ariticle__container {
+  width: 80%;
+  margin: 0 auto;
+}
+.Ariticle__Title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+.Ariticle__Main {
+  margin-top: 30px;
+  display: flex;
+}
+.Article__Hot {
+  flex: 1;
+}
+.Article__Hot__Title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.Article__Hot__Item {
+  margin-top: 20px;
+}
+.Article__Order {
+  padding: 10px;
+  background: #ccc;
+  font-size: 18px;
+}
+.Article__Sub {
+  font-size: 18px;
+}
+.Article__List {
+  flex: 2;
+}
+.Article__Item {
+  display: flex;
+  margin-bottom: 20px;
+}
+.Article__Img {
+  width: 300px;
+  height: 100px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.Ariticle__Name {
+  font-size: 18px;
+  flex: 3;
+  margin-left: 20px;
+}
