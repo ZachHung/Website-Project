@@ -1,6 +1,9 @@
 const express = require("express");
 const { route } = require("express/lib/application");
 const router = express.Router();
+router.get("/apple-nang-cap-camera", (req, res) => {
+  res.render("blogFour", { error: true });
+});
 router.get("/cach-de-phong-iphone-bi-nhiem-virus", (req, res) => {
   res.render("blogThree", { error: true });
 });
