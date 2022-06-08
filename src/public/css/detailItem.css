@@ -687,6 +687,83 @@
     transform: scale(100%);
   }
 }
+@media only screen and (max-width: 1200px) {
+  .path {
+    padding: 20px 0px 20px 20px;
+  }
+  .item-name {
+    padding: 20px;
+  }
+  .detailItem-container .swiper-slide img {
+    display: block;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .detailItem-sub .mySwiper4 {
+    height: 32rem;
+    width: 90%;
+  }
+  .detailItem-container .mySwiper2 img {
+    height: 95%;
+    width: 80%;
+  }
+  .detailIitem-main {
+    display: block;
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+  }
+  .detailItem-img {
+    width: 100%;
+    max-width: 100%;
+    position: static;
+    margin-top: 20px;
+  }
+  .detailItem-container .mySwiper .swiper-slide {
+    width: 20% !important;
+  }
+  .detailItem-container .swiper-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .detailItem-option {
+    width: 90%;
+    max-width: 100%;
+    position: static;
+    margin-top: 2rem;
+  }
+  .detailItem-about {
+    width: 90%;
+    max-width: 100%;
+
+    margin: 50px auto 0 auto;
+    padding: 0;
+  }
+  .detailItem-sub {
+    max-width: 100%;
+    margin: 0;
+  }
+  .mySwiper3 {
+    display: none;
+  }
+  .detailItem-sub .same-item {
+    margin-top: 2rem;
+  }
+  .detailItem-about .modal {
+    margin-top: 4.5rem;
+  }
+  .detailItem-sub .same-item-title {
+    margin-left: 20px;
+  }
+  .mySwiper4 {
+    display: block;
+  }
+  .detailItem-about .modal .modal-close-btn {
+    margin-left: 26rem;
+  }
+}
 @media only screen and (max-width: 739px) {
   .path {
     padding: 20px 0px 20px 20px;

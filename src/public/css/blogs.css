@@ -70,3 +70,38 @@ a:focus {
   flex: 3;
   margin-left: 20px;
 }
+@media only screen and (max-width: 1200px) {
+  .Ariticle__Main {
+    display: block;
+  }
+  .Article__List {
+    display: block;
+    margin-top: 2rem;
+  }
+  .Article__Item {
+    display: block;
+  }
+  .Ariticle__Name {
+    margin-top: 20px;
+  }
+  .Article__Img {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 739px) {
+  .Ariticle__Main {
+    display: block;
+  }
+  .Article__List {
+    display: block;
+    margin-top: 2rem;
+  }
+  .Article__Item {
+    display: block;
+  }
+  .Ariticle__Name {
+    margin-top: 20px;
+  }
+}
